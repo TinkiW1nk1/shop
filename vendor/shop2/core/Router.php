@@ -49,7 +49,7 @@ class Router
     public static function matchRoute($uri)
     {
         foreach (self::$routes as $pattern => $route) {
-            if (preg_match("#{$pattern}#", $uri, $matches)){
+            if (preg_match("#{$pattern}#i", $uri, $matches)){
             foreach ($matches as $k => $v){
                 if(is_string($k)){
                     $route[$k] = $v;

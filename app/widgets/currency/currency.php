@@ -35,6 +35,7 @@ class currency
         $currency = $currencies[$key];
         $currency['code'] = $key;
         return $currency;
+        debug($currency);
     }
 
     protected function getHtml(){

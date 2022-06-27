@@ -1,3 +1,11 @@
+/*Cart*/
+$('body').on('click', '.add-to-cart-link', function(e){
+    e.preventDefault();
+    var id = $this.data('id'),
+        qty = $this
+    console.log('1111');
+});
+/* /Cart */
 $('#currency').change(function(){
     window.location = 'currency/change?curr=' + $(this).val();
 });
